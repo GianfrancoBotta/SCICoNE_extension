@@ -1,0 +1,12 @@
+# Ignore hidden folders (starting with a dot)
+*/
+
+# Ignore Python cache and virtual envs
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# Ignore system files
+.DS_Store
+Thumbs.db
