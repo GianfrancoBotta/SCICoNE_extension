@@ -1,5 +1,7 @@
-# Ignore hidden folders (starting with a dot)
-*/
+# Ignore hidden files and directories (starting with a dot)
+.*
+# But keep .gitignore itself
+!.gitignore
 
 # Ignore Python cache and virtual envs
 __pycache__/

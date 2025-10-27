@@ -1,0 +1,8 @@
+name: ucsc
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - ucsc-facount=482
+  - ucsc-fatotwobit=482

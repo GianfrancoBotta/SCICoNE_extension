@@ -1,0 +1,7 @@
+name: genvisR
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - bioconductor-genvisr=1.38.0

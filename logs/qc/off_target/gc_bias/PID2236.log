@@ -1,0 +1,60 @@
+/cluster/work/bewi/members/gbotta/exploratory_da/workflow/.snakemake/conda/d84ec9f799574f40cc3a30393c2faafd_/bin/picard: line 5: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8): No such file or directory
+INFO	2025-10-18 13:54:16	CollectGcBiasMetrics	
+
+********** NOTE: Picard's command line syntax is changing.
+**********
+********** For more information, please see:
+********** 
+https://github.com/broadinstitute/picard/wiki/Command-Line-Syntax-Transition-For-Users-(Pre-Transition)
+**********
+********** The command line looks like this in the new syntax:
+**********
+**********    CollectGcBiasMetrics -I /cluster/work/bewi/members/gbotta/exploratory_da/results/prepare/bams/PID2236/mapped.sorted.healthy_cells.off_target.bam -O /cluster/work/bewi/members/gbotta/exploratory_da/results/qc/off_target/gc_bias/PID2236/gc_bias_metrics.txt -CHART /cluster/work/bewi/members/gbotta/exploratory_da/results/qc/off_target/gc_bias/PID2236/gc_bias_metrics.pdf -S /cluster/work/bewi/members/gbotta/exploratory_da/results/qc/off_target/gc_bias/PID2236/summary_metrics.txt -R /cluster/work/bewi/members/jgawron/INTeRCePT/tapestri/hg19/ucsc_hg19.fa
+**********
+
+
+INFO	2025-10-18 13:54:17	RExecutor	Executing R script via command: Rscript /tmp/script16231194376262656859.R
+ERROR	2025-10-18 13:54:19	ProcessExecutor	During startup - Warning messages:
+ERROR	2025-10-18 13:54:19	ProcessExecutor	1: Setting LC_CTYPE failed, using "C" 
+ERROR	2025-10-18 13:54:19	ProcessExecutor	2: Setting LC_COLLATE failed, using "C" 
+ERROR	2025-10-18 13:54:19	ProcessExecutor	3: Setting LC_TIME failed, using "C" 
+ERROR	2025-10-18 13:54:19	ProcessExecutor	4: Setting LC_MESSAGES failed, using "C" 
+ERROR	2025-10-18 13:54:19	ProcessExecutor	5: Setting LC_MONETARY failed, using "C" 
+ERROR	2025-10-18 13:54:19	ProcessExecutor	6: Setting LC_PAPER failed, using "C" 
+ERROR	2025-10-18 13:54:19	ProcessExecutor	7: Setting LC_MEASUREMENT failed, using "C" 
+INFO	2025-10-18 13:54:19	ProcessExecutor	[1] "Checking if R is installed"
+13:54:19.276 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/cluster/work/bewi/members/gbotta/exploratory_da/workflow/.snakemake/conda/d84ec9f799574f40cc3a30393c2faafd_/share/picard-3.4.0-0/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by com.intel.gkl.NativeLibraryLoader in an unnamed module (file:/cluster/work/bewi/members/gbotta/exploratory_da/workflow/.snakemake/conda/d84ec9f799574f40cc3a30393c2faafd_/share/picard-3.4.0-0/picard.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+[Sat Oct 18 13:54:19 GMT 2025] CollectGcBiasMetrics CHART_OUTPUT=/cluster/work/bewi/members/gbotta/exploratory_da/results/qc/off_target/gc_bias/PID2236/gc_bias_metrics.pdf SUMMARY_OUTPUT=/cluster/work/bewi/members/gbotta/exploratory_da/results/qc/off_target/gc_bias/PID2236/summary_metrics.txt INPUT=/cluster/work/bewi/members/gbotta/exploratory_da/results/prepare/bams/PID2236/mapped.sorted.healthy_cells.off_target.bam OUTPUT=/cluster/work/bewi/members/gbotta/exploratory_da/results/qc/off_target/gc_bias/PID2236/gc_bias_metrics.txt REFERENCE_SEQUENCE=/cluster/work/bewi/members/jgawron/INTeRCePT/tapestri/hg19/ucsc_hg19.fa    SCAN_WINDOW_SIZE=100 MINIMUM_GENOME_FRACTION=1.0E-5 IS_BISULFITE_SEQUENCED=false METRIC_ACCUMULATION_LEVEL=[ALL_READS] ALSO_IGNORE_DUPLICATES=false ASSUME_SORTED=true STOP_AFTER=0 VERBOSITY=INFO QUIET=false VALIDATION_STRINGENCY=STRICT COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=false CREATE_MD5_FILE=false USE_JDK_DEFLATER=false USE_JDK_INFLATER=false
+[Sat Oct 18 13:54:19 GMT 2025] Executing as gbotta@eu-g9-041-4 on Linux 5.15.0-153-generic amd64; OpenJDK 64-Bit Server VM 24.0.2-internal-adhoc.conda.src; Deflater: Intel; Inflater: Intel; Provider GCS is available; Picard version: 3.4.0
+INFO	2025-10-18 13:55:16	SinglePassSamProgram	Processed     1,000,000 records.  Elapsed time: 00:00:07s.  Time for last 1,000,000:    4s.  Last read position: chr1:120,466,408
+INFO	2025-10-18 13:55:20	SinglePassSamProgram	Processed     2,000,000 records.  Elapsed time: 00:00:11s.  Time for last 1,000,000:    3s.  Last read position: chr1:145,273,177
+INFO	2025-10-18 13:55:29	SinglePassSamProgram	Processed     3,000,000 records.  Elapsed time: 00:00:20s.  Time for last 1,000,000:    8s.  Last read position: chr3:187,446,971
+INFO	2025-10-18 13:55:35	SinglePassSamProgram	Processed     4,000,000 records.  Elapsed time: 00:00:26s.  Time for last 1,000,000:    5s.  Last read position: chr4:158,284,566
+INFO	2025-10-18 13:55:42	SinglePassSamProgram	Processed     5,000,000 records.  Elapsed time: 00:00:33s.  Time for last 1,000,000:    7s.  Last read position: chr6:106,552,894
+INFO	2025-10-18 13:55:47	SinglePassSamProgram	Processed     6,000,000 records.  Elapsed time: 00:00:38s.  Time for last 1,000,000:    5s.  Last read position: chr7:140,481,284
+INFO	2025-10-18 13:55:54	SinglePassSamProgram	Processed     7,000,000 records.  Elapsed time: 00:00:45s.  Time for last 1,000,000:    6s.  Last read position: chr9:37,015,039
+INFO	2025-10-18 13:56:01	SinglePassSamProgram	Processed     8,000,000 records.  Elapsed time: 00:00:52s.  Time for last 1,000,000:    7s.  Last read position: chr11:102,207,704
+INFO	2025-10-18 13:56:05	SinglePassSamProgram	Processed     9,000,000 records.  Elapsed time: 00:00:56s.  Time for last 1,000,000:    3s.  Last read position: chr11:108,186,573
+INFO	2025-10-18 13:56:10	SinglePassSamProgram	Processed    10,000,000 records.  Elapsed time: 00:01:02s.  Time for last 1,000,000:    5s.  Last read position: chr12:49,420,024
+INFO	2025-10-18 13:56:14	SinglePassSamProgram	Processed    11,000,000 records.  Elapsed time: 00:01:05s.  Time for last 1,000,000:    3s.  Last read position: chr12:49,431,915
+INFO	2025-10-18 13:56:18	SinglePassSamProgram	Processed    12,000,000 records.  Elapsed time: 00:01:09s.  Time for last 1,000,000:    3s.  Last read position: chr12:49,445,696
+INFO	2025-10-18 13:56:26	SinglePassSamProgram	Processed    13,000,000 records.  Elapsed time: 00:01:17s.  Time for last 1,000,000:    8s.  Last read position: chr16:3,786,599
+INFO	2025-10-18 13:56:30	SinglePassSamProgram	Processed    14,000,000 records.  Elapsed time: 00:01:21s.  Time for last 1,000,000:    4s.  Last read position: chr17:7,576,999
+INFO	2025-10-18 13:56:36	SinglePassSamProgram	Processed    15,000,000 records.  Elapsed time: 00:01:27s.  Time for last 1,000,000:    5s.  Last read position: chr20:35,532,481
+INFO	2025-10-18 13:56:41	RExecutor	Executing R script via command: Rscript /tmp/script4020150396801186566.R /cluster/work/bewi/members/gbotta/exploratory_da/results/qc/off_target/gc_bias/PID2236/gc_bias_metrics.txt /cluster/work/bewi/members/gbotta/exploratory_da/results/qc/off_target/gc_bias/PID2236/summary_metrics.txt /cluster/work/bewi/members/gbotta/exploratory_da/results/qc/off_target/gc_bias/PID2236/gc_bias_metrics.pdf 100
+ERROR	2025-10-18 13:56:41	ProcessExecutor	During startup - Warning messages:
+ERROR	2025-10-18 13:56:41	ProcessExecutor	1: Setting LC_CTYPE failed, using "C" 
+ERROR	2025-10-18 13:56:41	ProcessExecutor	2: Setting LC_COLLATE failed, using "C" 
+ERROR	2025-10-18 13:56:41	ProcessExecutor	3: Setting LC_TIME failed, using "C" 
+ERROR	2025-10-18 13:56:41	ProcessExecutor	4: Setting LC_MESSAGES failed, using "C" 
+ERROR	2025-10-18 13:56:41	ProcessExecutor	5: Setting LC_MONETARY failed, using "C" 
+ERROR	2025-10-18 13:56:41	ProcessExecutor	6: Setting LC_PAPER failed, using "C" 
+ERROR	2025-10-18 13:56:41	ProcessExecutor	7: Setting LC_MEASUREMENT failed, using "C" 
+INFO	2025-10-18 13:56:41	ProcessExecutor	Total clusters:  6583250 , Aligned reads:  15368870
+[Sat Oct 18 13:56:41 GMT 2025] picard.analysis.CollectGcBiasMetrics done. Elapsed time: 2.38 minutes.
+Runtime.totalMemory()=1345323008
