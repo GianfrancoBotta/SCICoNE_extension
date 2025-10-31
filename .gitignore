@@ -1,9 +1,22 @@
-# Ignore hidden files and directories (starting with a dot)
-.*
-# But keep .gitignore itself
-!.gitignore
+# Ignore everything by default
+*
 
-# Ignore Python cache and virtual envs
+# Track the repo essentials
+!.gitignore
+!Snakefile
+!run.sh
+!config/
+!workflow/
+
+# Track all normal files inside tracked directories
+!config/**/*
+!workflow/**/*
+
+# Ignore hidden files inside tracked directories
+config/**/.* 
+workflow/**/.*
+
+# Ignore Python cache and virtual environments
 __pycache__/
 *.pyc
 .venv/

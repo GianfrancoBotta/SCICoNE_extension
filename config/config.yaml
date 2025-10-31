@@ -1,0 +1,25 @@
+snakemake_min_version: "7.30.1"
+mambaforge_version: "24.7.1-0"
+
+# sample_names: ["G20_254.tube1.mapped", "G21_550.tube1.mapped", "PID2236", "QGF-211698_QGF-211701.tube1.mapped", "QGF-211699_QGF-211702.tube1.mapped"]
+sample_names: ["PID2236", "QGF-211698_QGF-211701", "QGF-211699_QGF-211702"]
+chr_regions: ["on_target", "off_target"]
+cell_types: ["healthy", "tumor"]
+
+
+hg19_gtf_link: "https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_19/gencode.v19.annotation.gtf.gz"
+# hg19_fasta_link: "https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_19/GRCh37.p13.genome.fa.gz"
+panel_bed: "/cluster/work/bewi/members/jgawron/bam_files/3848_annotated_panel.bed"
+align_genome: "/cluster/work/bewi/members/jgawron/INTeRCePT/tapestri/hg19/ucsc_hg19.fa"
+mappability_bias_results_link: "https://bismap.hoffmanlab.org/raw/hg19.umap.tar.gz"
+# window_binning_size_target: 1000
+# window_binning_size_off_target: 1000000
+fraction_overlap: 0.51
+
+subset_threads: 4
+qc_threads: 4
+simulate_threads: 12
+align_threads: 24
+
+sample_reads: 200000000
+target_reads_per_bin: 1000
