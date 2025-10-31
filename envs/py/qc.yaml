@@ -1,4 +1,4 @@
-name: qc
+name: qc_py
 channels:
   - conda-forge
   - bioconda

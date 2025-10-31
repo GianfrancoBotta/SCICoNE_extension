@@ -23,7 +23,7 @@ def correct_depth(
     depth : pandas.DataFrame | polars.DataFrame
         Dataset containing depth per bin and columns to correct the depth.
     corr_vars : str
-        List of variables to correct depth, options are: 'gc_bias', 'bin_length', 'mappability'
+        List of variables to correct depth, options are: 'gc_bias', 'bin_length'
     df2 : pandas.DataFrame | polars.DataFrame
         Second dataset, which contains the predictor variable.
     outpath : str
@@ -45,8 +45,6 @@ def correct_depth(
         expr = expr * pl.col('gc_bias')
     if 'bin_length' in corr_vars and 'bin_length' in depth.columns:
         expr = expr * pl.col('bin_length')
-    if 'mappability' in corr_vars and 'mappability' in depth.columns:
-        expr = expr * pl.col('mappability')
 
     depth = depth.with_columns(expr.alias("corr_factor"))
     

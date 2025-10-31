@@ -1,0 +1,7 @@
+name: art_modern
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - art_modern=1.2.0

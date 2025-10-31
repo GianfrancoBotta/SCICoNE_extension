@@ -28,8 +28,8 @@ gc_bias_sc = functools.reduce(
 )
 
 # Save wide format to tsv
-os.makedirs(os.path.dirname(snakemake.output['norm_depth_cell_wide_binned_bed']), exist_ok=True)
-gc_bias_sc.write_csv(snakemake.output['gc_bias_cell_wide_bed'], separator='\t')
+os.makedirs(os.path.dirname(snakemake.output['bed_binned_gc_bias_cell_wide']), exist_ok=True)
+gc_bias_sc.write_csv(snakemake.output['bed_binned_gc_bias_cell_wide'], separator='\t')
 
 # Remove directory with single-cell GC biases
 shutil.rmtree(snakemake.input['dir'])
